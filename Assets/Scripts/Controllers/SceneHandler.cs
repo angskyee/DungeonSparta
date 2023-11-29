@@ -9,7 +9,7 @@ public class SceneHandler : MonoBehaviour
 
     void Start()
     {
-
+        gameManager = FindObjectOfType<GameManager>();
     }
 
     public void LoadMainScene()

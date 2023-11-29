@@ -802,7 +802,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_FontData:
-    m_Font: {fileID: 12800000, guid: 0a43803b3e77f4ff2837e150315d8c04, type: 3}
+    m_Font: {fileID: 12800000, guid: d735de8b644e647ae91fe8375b6a70d2, type: 3}
     m_FontSize: 17
     m_FontStyle: 1
     m_BestFit: 0
@@ -1766,8 +1766,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 597294323}
-        m_TargetAssemblyTypeName: GameManager, Assembly-CSharp
+      - m_Target: {fileID: 2103488608}
+        m_TargetAssemblyTypeName: SceneHandler, Assembly-CSharp
         m_MethodName: LoadMainScene
         m_Mode: 1
         m_Arguments:
@@ -2084,7 +2084,7 @@ GameObject:
   - component: {fileID: 2103488609}
   - component: {fileID: 2103488608}
   m_Layer: 0
-  m_Name: SceneChangeManager
+  m_Name: SceneHandler
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

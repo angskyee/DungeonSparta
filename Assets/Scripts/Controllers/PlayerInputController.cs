@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
-public class PlayerInputController : PlayerController
+public class PlayerInputController : TopDownCharacterController
 {
     private Camera _camera;
 

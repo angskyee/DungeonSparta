@@ -336,6 +336,7 @@ GameObject:
   - component: {fileID: 541404417}
   - component: {fileID: 541404412}
   - component: {fileID: 541404414}
+  - component: {fileID: 541404418}
   - component: {fileID: 541404415}
   - component: {fileID: 541404416}
   m_Layer: 0
@@ -503,6 +504,18 @@ MonoBehaviour:
   armRenderer: {fileID: 1893228581}
   armPivot: {fileID: 1709154202}
   characterRenderer: {fileID: 1288741}
+--- !u!114 &541404418
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 541404410}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d318df86ad1bd4a5b9a8001eed3ee02c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &866450714
 GameObject:
   m_ObjectHideFlags: 0

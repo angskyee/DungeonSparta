@@ -25,12 +25,27 @@ public class SceneHandler : MonoBehaviour
 
     public void LoadChooseCharacterScene()
     {
-        SceneManager.LoadScene("ChooseCharacter");
-        
+        GameObject.FindWithTag("StartSceneBackground").SetActive(false);
+        GameObject.FindWithTag("ChooseSceneBackground").SetActive(true);
+
     }
 
     public void LoadChoosedToStartScene()
     {
-        SceneManager.LoadScene("StartScene");
+        GameObject.FindWithTag("StartSceneBackground").SetActive(true);
+        GameObject.FindWithTag("ChooseSceneBackground").SetActive(false);
     }
+
+    public void ChooseWizzard()
+    {
+        GameObject.FindWithTag("StartSceneWizzard").SetActive(true);
+        GameObject.FindWithTag("StartSceneKnight").SetActive(false);
+    }
+
+    public void ChooseKnight()
+    {
+        GameObject.FindWithTag("StartSceneWizzard").SetActive(false);
+        GameObject.FindWithTag("StartSceneKnight").SetActive(true);
+    }
+
 }

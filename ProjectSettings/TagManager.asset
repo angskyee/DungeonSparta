@@ -6,6 +6,7 @@ TagManager:
   tags:
   - StartSceneWizzard
   - StartSceneKnight
+  - StartSceneBackgournt
   layers:
   - Default
   - TransparentFX

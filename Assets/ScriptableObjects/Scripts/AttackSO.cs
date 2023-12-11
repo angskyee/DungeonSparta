@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-[CreateAssetMenu(fileName = "DefaultAttackData", menuName = "TopDownController/Attack/Default", order = 0)]
+[CreateAssetMenu(fileName = "DefaultAttackData", menuName = "TopDownController/Attacks/Default", order = 0)]
 
 public class AttackSO : ScriptableObject
 {

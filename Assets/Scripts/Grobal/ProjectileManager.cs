@@ -5,9 +5,10 @@ using UnityEngine;
 public class ProjectileManager : MonoBehaviour
 {
     [SerializeField] private ParticleSystem _impactParicleSystem;
-    [SerializeField] private GameObject testObj;
 
     public static ProjectileManager instance;
+
+    [SerializeField] private GameObject testObj;
 
     private void Awake()
     {
@@ -22,6 +23,9 @@ public class ProjectileManager : MonoBehaviour
     public void ShootBullet(Vector2 startPosition, Vector2 direction, RangedAttackData attackData)
     {
         GameObject obj = Instantiate(testObj);
+        Debug.Log("Projectile instantiated: " + obj);
+
+
         obj.transform.position = startPosition;
         RangedAttackController attackController = obj.GetComponent<RangedAttackController>();
         attackController.InitializeAttack(direction, attackData, this);

@@ -13,8 +13,8 @@ public class TopDownMovement : MonoBehaviour
 
     private void Awake()
     {
-        _stats = GetComponent<CharacterStatsHandler>();
         _controller = GetComponent<TopDownCharacterController>();
+        _stats = GetComponent<CharacterStatsHandler>();
         _rigidbody = GetComponent<Rigidbody2D>();
     }
 

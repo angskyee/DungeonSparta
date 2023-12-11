@@ -320,4 +320,4 @@ MonoBehaviour:
   levelCollisionLayer:
     serializedVersion: 2
     m_Bits: 128
-  onDestroy: 1
+  FxOnDestroy: 1

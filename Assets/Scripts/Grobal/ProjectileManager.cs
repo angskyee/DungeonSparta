@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class ProjectileManager : MonoBehaviour
 {
-    [SerializeField] private ParticleSystem _impactParicleSystem;
+    [SerializeField] private ParticleSystem _impactParticleSystem;
 
     public static ProjectileManager instance;
 
@@ -29,5 +29,15 @@ public class ProjectileManager : MonoBehaviour
         attackController.InitializeAttack(direction, attackData, this);
 
         obj.SetActive(true);
+    }
+
+    public void CreateImpactParticlesAtPostion(Vector3 position, RangedAttackData attackData)
+    {
+        _impactParticleSystem.transform.position = position;
+        ParticleSystem.EmissionModule em = _impactParticleSystem.emission;
+        em.SetBurst(0, new ParticleSystem.Burst(0, Mathf.Ceil(attackData.size * 5)));
+        ParticleSystem.MainModule mainModule = _impactParticleSystem.main;
+        mainModule.startSpeedMultiplier = attackData.size * 10f;
+        _impactParticleSystem.Play();
     }
 }

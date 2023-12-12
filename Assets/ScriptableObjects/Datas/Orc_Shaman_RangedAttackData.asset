@@ -15,16 +15,16 @@ MonoBehaviour:
   size: 0.5
   delay: 1
   power: 1
-  speed: 10
+  speed: 5
   target:
     serializedVersion: 2
     m_Bits: 256
-  isOnKnockBack: 1
+  isOnKnockBack: 0
   knockBackPower: 5
   knockBackTime: 0.1
   bulletNameTag: Arrow
   duration: 5
-  spread: 8
+  spread: 4
   numberOfProjectilesPerShot: 1
   multipleProjectilesAngel: 7
-  projectileColor: {r: 1, g: 0.740566, b: 0.740566, a: 1}
+  projectileColor: {r: 1, g: 0.8915094, b: 0.8915094, a: 1}

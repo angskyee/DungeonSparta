@@ -27,11 +27,12 @@ public class TopDownShooting : MonoBehaviour
         _aimDirection = newAimDirection;
     }
 
-    private void OnShoot(AttackSO attackSo)
+    private void OnShoot(AttackSO attackSO)
     {
-        RangedAttackData rangedAttackData = attackSo as RangedAttackData;
+        RangedAttackData rangedAttackData = attackSO as RangedAttackData;
         float projectilesAngleSpace = rangedAttackData.multipleProjectilesAngel;
         int numberOfProjectilesPerShot = rangedAttackData.numberOfProjectilesPerShot;
+
         float minAngle = -(numberOfProjectilesPerShot / 2f) * projectilesAngleSpace + 0.5f * rangedAttackData.multipleProjectilesAngel;
 
 
@@ -47,10 +48,10 @@ public class TopDownShooting : MonoBehaviour
     private void CreateProjectile(RangedAttackData rangedAttackData, float angle)
     {
         _projectileManager.ShootBullet(
-            projectileSpawnPosition.position,
-            RotateVector2(_aimDirection, angle),
-            rangedAttackData
-            );
+                projectileSpawnPosition.position,
+                RotateVector2(_aimDirection, angle),
+                rangedAttackData
+                );
     }
 
     private static Vector2 RotateVector2(Vector2 v, float degree)

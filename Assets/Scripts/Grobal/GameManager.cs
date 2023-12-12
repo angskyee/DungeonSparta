@@ -6,8 +6,6 @@ using UnityEngine.UI;
 
 public class GameManager : MonoBehaviour
 {
-    public InputField inputName;
-
     public static GameManager instance;
 
     public Transform Player { get; private set; }
@@ -18,15 +16,4 @@ public class GameManager : MonoBehaviour
         instance = this;
         Player = GameObject.FindGameObjectWithTag(playerTag).transform;
     }
-
-    public void Load()
-    {
-        if (PlayerPrefs.HasKey("Name"))
-        {
-            inputName.text = PlayerPrefs.GetString("Name");
-        }
-
-    }
-
-    
 }

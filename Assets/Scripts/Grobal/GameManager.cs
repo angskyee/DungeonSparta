@@ -26,6 +26,8 @@ public class GameManager : MonoBehaviour
     public float spawnInterval = .5f;
     public List<GameObject> enemyPrefebs = new List<GameObject>();
 
+    public List<GameObject> rewards = new List<GameObject>();
+
     [SerializeField] private Transform spawnPositionsRoot;
     private List<Transform> spawnPostions = new List<Transform>();
 
@@ -75,7 +77,7 @@ public class GameManager : MonoBehaviour
 
                 if (currentWaveIndex % 5 == 0)
                 {
-                    //CreateReward();
+                    CreateReward();
                 }
 
                 if (currentWaveIndex % 3 == 0)
@@ -134,5 +136,14 @@ public class GameManager : MonoBehaviour
     public void ExitGame()
     {
         Application.Quit();
+    }
+
+    void CreateReward()
+    {
+        int idx = Random.Range(0, rewards.Count);
+        int posIdx = Random.Range(0, spawnPostions.Count);
+
+        GameObject obj = rewards[idx];
+        Instantiate(obj, spawnPostions[posIdx].position, Quaternion.identity);
     }
 }

@@ -55,12 +55,12 @@ public class RangedAttackController : MonoBehaviour
             if(healthSystem != null)
             {
                 healthSystem.ChangeHealth(-_attackData.power);
-                if (_attackData.isOnKnockBack)
+                if (_attackData.isOnKnockback)
                 {
                     TopDownMovement movement = collision.GetComponent<TopDownMovement>();
                     if(movement != null)
                     {
-                        movement.ApplyKnockback(transform, _attackData.knockBackPower, _attackData.knockBackTime);
+                        movement.ApplyKnockback(transform, _attackData.knockbackPower, _attackData.knockbackTime);
                     }
                 }
             }

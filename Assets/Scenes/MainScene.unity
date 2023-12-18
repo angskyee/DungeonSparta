@@ -546,6 +546,16 @@ MonoBehaviour:
   - {fileID: 2039156209313780957, guid: 67859c223ef1a4cbc9b1cbf76d3eb181, type: 3}
   - {fileID: 1903413249474305966, guid: a93ec69203a464ed88694172d731db7d, type: 3}
   spawnPositionsRoot: {fileID: 503073459}
+  defaultStats:
+    statsChangeType: 0
+    maxHealth: 0
+    speed: 0
+    attackSO: {fileID: 11400000, guid: 82231a8cdd0ab4d6c90fc34c91daa3c6, type: 2}
+  rangedStats:
+    statsChangeType: 0
+    maxHealth: 0
+    speed: 0
+    attackSO: {fileID: 11400000, guid: 096430cb4ac23484aaa4be84cfdc1f7f, type: 2}
 --- !u!1 &357028701
 GameObject:
   m_ObjectHideFlags: 0

@@ -55,6 +55,8 @@ public class CharacterStatsHandler : MonoBehaviour
 
         foreach (CharacterStats modifier in statsModifiers.OrderBy(o => o.statsChangeType))
         {
+            Debug.Log($"{modifier.maxHealth}, {modifier.maxHealth}, {modifier.statsChangeType}");
+
             if (modifier.statsChangeType == StatsChangeType.Override)
             {
                 UpdateStats((o, o1) => o1, modifier);
@@ -67,6 +69,7 @@ public class CharacterStatsHandler : MonoBehaviour
             {
                 UpdateStats((o, o1) => o * o1, modifier);
             }
+            Debug.Log($"{modifier.maxHealth}, {modifier.maxHealth}, {modifier.statsChangeType}");
         }
 
         LimitAllStats();
